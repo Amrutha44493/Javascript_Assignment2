@@ -107,3 +107,7 @@ function validatePasswordStrength(password) {
         strengthIndicator.style.color = "orange";
     }
 }
+
+document.getElementById("signupPassword").addEventListener("input", function () {
+    validatePasswordStrength(this.value);
+});
